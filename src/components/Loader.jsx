@@ -23,7 +23,7 @@ const CanvasLoader = () => {
         }}
       >
         {progress.toFixed(2)}%
-      </p>
+      </p> 
     </Html>
   );
 };
