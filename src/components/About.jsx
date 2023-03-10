@@ -8,6 +8,9 @@ import {SectionWrapper} from "../hoc";
 import {fadeIn, textVariant} from "../utils/motion";
 
 const ServiceCard = ({index, title, icon}) => (
+    //react-tilt是一个React组件，它使用了Vanilla Tilt 库，用于实现在鼠标移动下的可视元素的倾斜效果。
+    // Tilt组件可以在鼠标移动时，根据鼠标的位置和方向来改变元素的倾斜角度和视角，使得元素在屏幕上呈现出动态和交互性。
+    // 这个组件可以在网页设计中使用，以提高用户的交互体验和视觉吸引力。例如，可以在导航菜单或产品展示页面中使用，使页面更加生动和有趣。
     <Tilt className='xs:w-[250px] w-full'>
         <motion.div
             variants={fadeIn("right", "spring", index * 0.5, 0.75)}
@@ -50,11 +53,11 @@ const About = () => {
                 我是一个熟练的软件开发人员，有TypeScript和JavaScript的经验，以及React、Node.js和Three.js等框架的专业知识。我学习能力强，能与客户紧密合作，创造高效、可扩展、用户友好的解决方案，解决现实问题。让我们一起努力，把你的想法变成现实!
             </motion.p>
 
-            {/*<div className='mt-20 flex flex-wrap gap-10'>*/}
-            {/*  {services.map((service, index) => (*/}
-            {/*    <ServiceCard key={service.title} index={index} {...service} />*/}
-            {/*  ))}*/}
-            {/*</div>*/}
+            <div className='mt-20 flex flex-wrap gap-10'>
+                {services.map((service, index) => (
+                    <ServiceCard key={service.title} index={index} {...service} />
+                ))}
+            </div>
         </>
     );
 };
