@@ -71,8 +71,8 @@ const Works = () => {
   return (
     <>
       <motion.div variants={textVariant()}>
-        <p className={`${styles.sectionSubText} `}>My work</p>
-        <h2 className={`${styles.sectionHeadText}`}>Projects.</h2>
+        <p className={`${styles.sectionSubText} `}>我的工作</p>
+        <h2 className={`${styles.sectionHeadText}`}>项目</h2>
       </motion.div>
 
       <div className='w-full flex'>
@@ -80,11 +80,7 @@ const Works = () => {
           variants={fadeIn("", "", 0.1, 1)}
           className='mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]'
         >
-          Following projects showcases my skills and experience through
-          real-world examples of my work. Each project is briefly described with
-          links to code repositories and live demos in it. It reflects my
-          ability to solve complex problems, work with different technologies,
-          and manage projects effectively.
+          以下项目通过我工作的真实例子展示了我的技能和经验。每个项目都简短地描述了代码库的链接和现场演示。它反映了我解决复杂问题、使用不同技术以及有效管理项目的能力。
         </motion.p>
       </div>
 
